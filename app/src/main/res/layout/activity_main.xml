@@ -1,72 +1,39 @@
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="#EDA6FA"
     android:orientation="vertical"
+    android:background="@drawable/gradient"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView
-        android:text="NAME"
+    <EditText
+        android:id="@+id/email"
+        android:hint="Enter Email Id"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
+        android:id="@+id/password"
+        android:hint="Enter the password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <TextView
-        android:text="ADDRESS"
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="login"
+        android:text="LOGIN"
+        android:textSize="20dp"
+        android:layout_margin="40dp"
+         android:background="@drawable/buttonstyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="PHONE NUMEBR"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="EMAIL ID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="PIN CODE"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="USER NAME"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="PASSWORD"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="CONFIRM PASSWORD"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:onClick="registerform"
+        android:textSize="20dp"
         android:text="REGISTER"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:text="BACK TO LOGIN"
+        android:background="@drawable/buttonstyle"
+        android:layout_margin="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    
 </LinearLayout>
